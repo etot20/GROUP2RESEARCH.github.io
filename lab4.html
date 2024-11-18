@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Description</title>
+    <style>
+        body {
+            background-color: #001f3f;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .description {
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        .spacer {
+            height: 50px; /* Adjust this value to add more or less space */
+        }
+        .back-button {
+            padding: 10px 20px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #003060;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.tableau.com/sites/default/files/2022-05/Products_Desktop_Intro.png" alt="Description of image">
+        <div class="description">
+            AlphaFold2 is a multicomponent artificial intelligence (AI) system that uses machine learning to predict a protein’s 3D structure based on its primary amino acid sequence.
+
+Machine learning is a way for an AI to learn the patterns in a huge dataset. Once the AI has been trained on existing data, it can predict the properties of new examples, using the patterns it has identified.
+
+AlphaFold2 is an example of an artificial neural network. It is a collection of simulated nodes, linked by connections that can be strengthened or weakened. Such networks can be adept at machine learning. Because AlphaFold’s network contains multiple layers of nodes, it is referred to as a “deep learning” algorithm. Please refer to the AlphaFold paper for the detailed description of the neural network architecture (Jumper et al., 2021) or even check exact implementation in the open source code.
+        </div>
+        <div class="description">
+            Embl-Ebi. (n.d.). What is AlphaFold? | AlphaFold. https://www.ebi.ac.uk/training/online/courses/alphafold/an-introductory-guide-to-its-strengths-and-limitations/what-is-alphafold/
+        </div>
+        <div class="spacer"></div> <!-- Added spacer to move the button down -->
+        <a href="buttons.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>
