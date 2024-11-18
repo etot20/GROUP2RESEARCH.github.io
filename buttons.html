@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Examples of Different Virtual Laboratories</title>
+    <style>
+        body {
+            background-color: #001f3f; /* Navy blue background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #ffffff; /* White text for the title */
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button {
+            background-color: #004080; /* Darker navy blue for buttons */
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            width: 250px;
+            height: 250px;
+            cursor: pointer;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .button img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .button span {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for text */
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .button a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .back-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #004080; /* Darker navy blue for the button */
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #003060; /* Slightly darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Examples of Different Virtual Laboratories</h1>
+    <div class="button-container">
+        <!-- Button 1 -->
+        <button class="button">
+            <a href="lab1.html">
+                <img src="https://play-lh.googleusercontent.com/OceHg5bH7EsTRwl-lD7jjV9WM0mpj0oH4YfA-CSbjvfa7NCLQBu5-4cLwNlDvCUp5Q4" alt="Lab 1 Image">
+                <span>Virtual Labs by Wolfram Alpha</span>
+            </a>
+        </button>
+
+        <!-- Button 2 -->
+        <button class="button">
+            <a href="lab2.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQooRNFDBJ0mCN3Qpb9soMByU90cqqtRlhVg&s" alt="Lab 2 Image">
+                <span>Google AutoML</span>
+            </a>
+        </button>
+
+        <!-- Button 3 -->
+        <button class="button">
+            <a href="lab3.html">
+                <img src="https://secure.touchnet.net/C20569_ustores/web/uploaded_images/store_68/Tableau.png" alt="Lab 3 Image">
+                <span>Tableau</span>
+            </a>
+        </button>
+
+        <!-- Button 4 -->
+        <button class="button">
+            <a href="lab4.html">
+                <img src="https://alphafold.ebi.ac.uk/assets/img/Q8W3K0.png" alt="Lab 4 Image">
+                <span>AlphaFold</span>
+            </a>
+        </button>
+
+        <!-- Button 5 -->
+        <button class="button">
+            <a href="lab5.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkrTCTuJYprkQVuDwLn3k2d-ssngsWmRYMFQ&s" alt="Lab 5 Image">
+                <span>SimBio Labs</span>
+            </a>
+        </button>
+    </div>
+
+    <!-- Back Button -->
+    <a href="thirdpage.html" class="back-button">Back</a>
+</body>
+</html>
